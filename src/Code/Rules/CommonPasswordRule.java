@@ -1,4 +1,4 @@
 package Code.Rules;
 
-public class CommonPasswordRule {
+public class CommonPasswordRule extends PasswordRule{
 }

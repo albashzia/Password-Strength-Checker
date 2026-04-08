@@ -1,4 +1,4 @@
 package Code.Rules;
 
-public class SequentialPatternRule {
+public class SequentialPatternRule extends PasswordRule{
 }

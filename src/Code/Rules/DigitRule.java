@@ -1,4 +1,4 @@
 package Code.Rules;
 
-public class DigitRule {
+public class DigitRule extends PasswordRule{
 }

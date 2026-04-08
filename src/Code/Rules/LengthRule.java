@@ -1,4 +1,4 @@
 package Code.Rules;
 
-public class LengthRule {
+public class LengthRule extends PasswordRule{
 }

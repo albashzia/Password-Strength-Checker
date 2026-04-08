@@ -1,4 +1,4 @@
 package Code.Rules;
 
-public class RepeatedCharacterRule {
+public class RepeatedCharacterRule extends PasswordRule{
 }

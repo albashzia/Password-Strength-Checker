@@ -1,4 +1,4 @@
 package Code.Rules;
 
-public class SpecialCharacterRule {
+public class SpecialCharacterRule extends PasswordRule{
 }

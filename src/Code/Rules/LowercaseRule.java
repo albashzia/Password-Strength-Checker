@@ -1,4 +1,4 @@
 package Code.Rules;
 
-public class LowercaseRule {
+public class LowercaseRule extends PasswordRule{
 }
