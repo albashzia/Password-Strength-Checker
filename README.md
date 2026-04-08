@@ -5,3 +5,4 @@
 <h2 align="center">Working</h2>
 <h2 align="center">Purpose</h2>
 <h2 align="center">License</h2>
+<p>This project is being developed for educational and learning purposes.</p>
