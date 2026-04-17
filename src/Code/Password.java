@@ -19,7 +19,7 @@ public class Password {
     }
 
     int getLength(){
-        return 0;
+        return value.length();
     }
 
     boolean containsUppercase(){
