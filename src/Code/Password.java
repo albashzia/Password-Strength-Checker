@@ -24,7 +24,7 @@ public class Password {
 
     boolean containsUppercase(){
         for (int index = 0; index < value.length(); index++){
-            if (value.charAt(index)<= 'A' && value.charAt(index)>='Z'){
+            if (value.charAt(index)>= 'A' && value.charAt(index)<='Z'){
                 return true;
             }
         }
