@@ -69,6 +69,10 @@ public class Password {
     }
 
     boolean containsPattern(){
+        String pattern1 = "0123456789";
+        String pattern2 = "abcdefghijklmnopqrstuvwxyz";
+        String pattern3 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
         return false;
     }
 
