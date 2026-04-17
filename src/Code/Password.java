@@ -54,6 +54,8 @@ public class Password {
             if (
                     ((int)value.charAt(index)>=33 &&
                      (int)value.charAt(index)<=47) ||
+                    ((int)value.charAt(index)>=33 &&
+                     (int)value.charAt(index)<=47) ||
                     ((int)value.charAt(index)>=91 &&
                      (int)value.charAt(index)<=96) ||
                     ((int)value.charAt(index)>=123 &&
