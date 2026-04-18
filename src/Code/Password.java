@@ -70,6 +70,16 @@ public class Password {
 
     boolean containsPattern(){
         String pattern1 = "0123456789";
+
+        for (int i = 0; i < pattern1.length(); i++){
+            for (int j = 1+1; j <= pattern1.length(); j++){
+                String sub = pattern1.substring(i,j);
+                if (value.contains(sub)){
+                    return true;
+                }
+            }
+        }
+
         String pattern2 = "abcdefghijklmnopqrstuvwxyz";
         String pattern3 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
