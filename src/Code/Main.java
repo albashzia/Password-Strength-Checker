@@ -2,10 +2,14 @@ package Code;
 import java.util.Scanner;
 
 class Main{
-    Scanner input = new Scanner(System.in);
+    static Scanner input = new Scanner(System.in);
 
     public static void main(String args[]) {
-        Password pwd = new Password("@QWERTYuiopabcd");
+
+        System.out.print("Enter a password:");
+        String value = input.next();
+
+        Password pwd = new Password(value);
 
         boolean upper = pwd.containsUppercase();
         System.out.println("Contains Upper case letter: "+upper);
