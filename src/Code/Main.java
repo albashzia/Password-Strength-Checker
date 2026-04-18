@@ -2,7 +2,7 @@ package Code;
 
 class Main{
     public static void main(String args[]) {
-        Password pwd = new Password("@QWERTYuiop1234");
+        Password pwd = new Password("@QWERTYuiopabcd");
 
         boolean upper = pwd.containsUppercase();
         System.out.println("Contains Upper case letter: "+upper);
@@ -15,5 +15,8 @@ class Main{
 
         boolean specialChar = pwd.containsSpecialChar();
         System.out.println("Contains Special Character: "+specialChar);
+
+        boolean pattern = pwd.containsPattern();
+        System.out.println("Contains Pattern: "+pattern);
     }
 }
