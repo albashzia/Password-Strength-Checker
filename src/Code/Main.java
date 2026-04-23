@@ -1,9 +1,11 @@
 package Code;
+import Code.Rules.CommonPasswordRule;
+
 import java.util.Scanner;
 
 class Main{
     static Scanner input = new Scanner(System.in);
-
+    static CommonPasswordRule commonPasswordRule = new CommonPasswordRule();
     public static void main(String args[]) {
 
         System.out.print("Enter a password:");
@@ -25,5 +27,8 @@ class Main{
 
         boolean pattern = pwd.containsPattern();
         System.out.println("Contains Pattern: "+pattern);
+
+        boolean commonPassword = commonPasswordRule.containsCommonPassword(value);
+        System.out.println("Contains Common Password: "+commonPassword);
     }
 }
