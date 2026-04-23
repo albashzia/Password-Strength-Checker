@@ -60,7 +60,15 @@ public class CommonPasswordRule extends PasswordRule{
             "default"
     ));
 
-    CommonPasswordRule(ArrayList<String> commonPasswords){
-        this.commonPasswords = commonPasswords;
+    public CommonPasswordRule(){
+    }
+
+    public boolean containsCommonPassword(String pwd){
+        for (int i = 0; i < commonPasswords.size();i++){
+            if (commonPasswords.get(i).equalsIgnoreCase(pwd)){
+                return true;
+            }
+        }
+        return false;
     }
 }
