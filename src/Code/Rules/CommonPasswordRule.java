@@ -59,4 +59,8 @@ public class CommonPasswordRule extends PasswordRule{
             "user",
             "default"
     ));
+
+    CommonPasswordRule(ArrayList<String> commonPasswords){
+        this.commonPasswords = commonPasswords;
+    }
 }
