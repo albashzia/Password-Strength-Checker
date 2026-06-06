@@ -1,5 +1,7 @@
 package Code.Rules;
 
+import Code.Password;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -60,7 +62,8 @@ public class CommonPasswordRule extends PasswordRule{
             "default"
     ));
 
-    public CommonPasswordRule(){
+    public CommonPasswordRule(String ruleName, String errorMessage){
+        super(ruleName,errorMessage);
     }
 
     public boolean containsCommonPassword(String pwd){
@@ -69,6 +72,11 @@ public class CommonPasswordRule extends PasswordRule{
                 return true;
             }
         }
+        return false;
+    }
+
+    @Override
+    boolean validate(Password password) {
         return false;
     }
 }
