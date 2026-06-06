@@ -4,9 +4,11 @@ import Code.Password;
 
 public class LengthRule extends PasswordRule{
 
-    LengthRule(String ruleName, String errorMessage){
-        super(ruleName,errorMessage);
+    private int minLength;
 
+    LengthRule(String ruleName, String errorMessage, int minLength){
+        super(ruleName,errorMessage);
+        this.minLength = minLength;
     }
     @Override
     boolean validate(Password password) {
