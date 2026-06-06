@@ -10,6 +10,11 @@ public class LengthRule extends PasswordRule{
         super(ruleName,errorMessage);
         this.minLength = minLength;
     }
+
+    int getMinLength(){
+        return minLength;
+    }
+
     @Override
     boolean validate(Password password) {
         return false;
