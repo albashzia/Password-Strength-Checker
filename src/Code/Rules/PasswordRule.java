@@ -5,4 +5,9 @@ package Code.Rules;
 abstract class PasswordRule {
     private String ruleName;
     private String errorMessage;
+
+    PasswordRule(String ruleName, String errorMessage){
+        this.ruleName = ruleName;
+        this.errorMessage = errorMessage;
+    }
 }
