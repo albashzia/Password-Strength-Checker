@@ -10,4 +10,12 @@ abstract class PasswordRule {
         this.ruleName = ruleName;
         this.errorMessage = errorMessage;
     }
+
+    String getRuleName(){
+        return ruleName;
+    }
+
+    String getErrorMessage(){
+        return  errorMessage;
+    }
 }
