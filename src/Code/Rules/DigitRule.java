@@ -4,9 +4,13 @@ import Code.Password;
 
 public class DigitRule extends PasswordRule{
 
-    public DigitRule(String ruleName, String errorMessage){
+    String password;
+    public DigitRule(String ruleName, String errorMessage, String password){
         super(ruleName,errorMessage);
+        this.password = password;
     }
+
+
 
     @Override
     boolean validate(Password password) {
