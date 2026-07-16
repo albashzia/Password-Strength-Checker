@@ -14,8 +14,8 @@ public class LowercaseRule extends PasswordRule{
         boolean lowerCase = false;
 
         for (int i = 0; i < password.length(); i++){
-            for(int j = 97; j <= 122; j++ ){
-                if(password.charAt(i) == (char) j){
+            for(char c = 'a'; c <= 'z'; c++){
+                if(password.charAt(i) == c ){
                     lowerCase = true;
                     return lowerCase;
                 }
