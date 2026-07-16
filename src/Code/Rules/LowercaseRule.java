@@ -10,13 +10,17 @@ public class LowercaseRule extends PasswordRule{
         this.password = password;
     }
 
-    public boolean hasLowerCase{
+    public boolean hasLowerCase(String password){
         boolean lowerCase = false;
 
         for (int i = 0; i < password.length(); i++){
-
+            for(int j = 97; j <= 122; j++ ){
+                if(password.charAt(i) == (char) j){
+                    lowerCase = true;
+                    return lowerCase;
+                }
+            }
         }
-
         return lowerCase;
     }
 
