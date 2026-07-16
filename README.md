@@ -32,7 +32,11 @@
                             <li>ValidationResult</li>
                         </ul>
                 </li>
-                <li>GUI</li>
+                <li>GUI
+                        <ul>
+                            <li>HomeFrame</li>
+                        </ul>
+                </li>
             </ul>
     </li>
 </ul>
