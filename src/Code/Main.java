@@ -23,15 +23,14 @@ class Main{
         boolean upper = pwd.containsUppercase();
         System.out.println("Contains Upper case letter: "+upper);
 
-        boolean lower = lowercaseRule.validate(pwd);
-        System.out.println("Contains Lower case letter: "+lower);
-
-
         boolean specialChar = pwd.containsSpecialChar();
         System.out.println("Contains Special Character: "+specialChar);
 
         boolean pattern = pwd.containsPattern();
         System.out.println("Contains Pattern: "+pattern);
+
+        boolean lower = lowercaseRule.validate(pwd);
+        System.out.println("Contains Lower case letter: "+lower);
 
         boolean length = lengthRule.validate(pwd);
         System.out.println("Satisfies Length Requirement: "+length);
