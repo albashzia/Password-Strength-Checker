@@ -5,9 +5,8 @@ import Code.Password;
 public class DigitRule extends PasswordRule{
 
     String password;
-    public DigitRule(String ruleName, String errorMessage, String password){
+    public DigitRule(String ruleName, String errorMessage){
         super(ruleName,errorMessage);
-        this.password = password;
     }
 
 
