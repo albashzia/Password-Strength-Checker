@@ -66,17 +66,14 @@ public class CommonPasswordRule extends PasswordRule{
         super(ruleName,errorMessage);
     }
 
-    public boolean containsCommonPassword(String pwd){
-        for (int i = 0; i < commonPasswords.size();i++){
-            if (commonPasswords.get(i).equalsIgnoreCase(pwd)){
-                return true;
-            }
-        }
-        return false;
-    }
 
     @Override
     boolean validate(Password password) {
+        for (int i = 0; i < commonPasswords.size();i++){
+            if (commonPasswords.get(i).equalsIgnoreCase(password.getValue())){
+                return true;
+            }
+        }
         return false;
     }
 }
