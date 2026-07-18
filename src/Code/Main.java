@@ -23,7 +23,7 @@ class Main{
         boolean lower = pwd.containsLowercase();
         System.out.println("Contains Lower case letter: "+lower);
 
-        boolean digit = pwd.containsDigit();
+        boolean digit = digitRule.validate(pwd);
         System.out.println("Contains a digit: "+digit);
 
         boolean specialChar = pwd.containsSpecialChar();
