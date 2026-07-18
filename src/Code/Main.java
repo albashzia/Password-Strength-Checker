@@ -1,11 +1,15 @@
 package Code;
 import Code.Rules.CommonPasswordRule;
+import Code.Rules.DigitRule;
 
+import java.io.DataInput;
 import java.util.Scanner;
 
 class Main{
     static Scanner input = new Scanner(System.in);
-    static CommonPasswordRule commonPasswordRule = new CommonPasswordRule("Common Password Rule","Common Password Found");
+    static CommonPasswordRule commonPasswordRule = new CommonPasswordRule("Common Password Rule","Error in CommonPasswordRule class");
+    static DigitRule digitRule = new DigitRule("Digit Rule","Error in DigitRule class");
+
     public static void main(String args[]) {
 
         System.out.print("Enter a password:");
