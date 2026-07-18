@@ -68,7 +68,7 @@ public class CommonPasswordRule extends PasswordRule{
 
 
     @Override
-    boolean validate(Password password) {
+    public boolean validate(Password password) {
         for (int i = 0; i < commonPasswords.size();i++){
             if (commonPasswords.get(i).equalsIgnoreCase(password.getValue())){
                 return true;
