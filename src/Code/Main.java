@@ -1,8 +1,5 @@
 package Code;
-import Code.Rules.CommonPasswordRule;
-import Code.Rules.DigitRule;
-import Code.Rules.LengthRule;
-import Code.Rules.LowercaseRule;
+import Code.Rules.*;
 
 import java.io.DataInput;
 import java.util.Scanner;
@@ -13,6 +10,7 @@ class Main{
     static DigitRule digitRule = new DigitRule("Digit Rule","Error in DigitRule class");
     static LengthRule lengthRule = new LengthRule("Length Rule", "Error in LengthRule class");
     static LowercaseRule lowercaseRule = new LowercaseRule("Lower Case Rule","Error in LowercaseRule class");
+    static UppercaseRule uppercaseRule = new UppercaseRule("Upper Case Rule","Error in UppercaseRule class");
     public static void main(String args[]) {
 
         System.out.print("Enter a password:");
