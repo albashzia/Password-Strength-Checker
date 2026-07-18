@@ -10,22 +10,15 @@ public class LowercaseRule extends PasswordRule{
         this.password = password;
     }
 
-    public boolean hasLowerCase(String password){
-        boolean lowerCase = false;
-
-        for (int i = 0; i < password.length(); i++){
+    @Override
+    boolean validate(Password password) {
+        for (int i = 0; i < password.getValue().length(); i++){
             for(char c = 'a'; c <= 'z'; c++){
-                if(password.charAt(i) == c ){
-                    lowerCase = true;
-                    return lowerCase;
+                if(password.getValue().charAt(i) == c ){
+                    return true ;
                 }
             }
         }
-        return lowerCase;
-    }
-
-    @Override
-    boolean validate(Password password) {
         return false;
     }
 }
