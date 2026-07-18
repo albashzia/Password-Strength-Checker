@@ -13,6 +13,9 @@ public class LengthRule extends PasswordRule{
 
     @Override
     boolean validate(Password password) {
+        if (password.getValue().length()>=minLength){
+            return true;
+        }
         return false;
     }
 }
