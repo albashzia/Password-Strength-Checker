@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 class Main{
     static Scanner input = new Scanner(System.in);
-    static CommonPasswordRule commonPasswordRule = new CommonPasswordRule();
+    static CommonPasswordRule commonPasswordRule = new CommonPasswordRule("Common Password Rule","Common Password Found");
     public static void main(String args[]) {
 
         System.out.print("Enter a password:");
