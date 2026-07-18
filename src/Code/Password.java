@@ -40,14 +40,6 @@ public class Password {
         return false;
     }
 
-    boolean containsDigit(){
-        for (int index = 0; index < value.length(); index++){
-            if (value.charAt(index)>= '0' && value.charAt(index)<='9'){
-                return true;
-            }
-        }
-        return false;
-    }
 
     boolean containsSpecialChar(){
         for (int index = 0; index < value.length(); index++){
