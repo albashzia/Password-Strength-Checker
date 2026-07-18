@@ -4,7 +4,7 @@ import Code.Password;
 
 public class LengthRule extends PasswordRule{
 
-    private int minLength;
+    private final int minLength = 8;
 
     LengthRule(String ruleName, String errorMessage){
         super(ruleName,errorMessage);
