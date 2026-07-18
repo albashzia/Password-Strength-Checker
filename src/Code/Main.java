@@ -2,6 +2,7 @@ package Code;
 import Code.Rules.CommonPasswordRule;
 import Code.Rules.DigitRule;
 import Code.Rules.LengthRule;
+import Code.Rules.LowercaseRule;
 
 import java.io.DataInput;
 import java.util.Scanner;
@@ -11,7 +12,7 @@ class Main{
     static CommonPasswordRule commonPasswordRule = new CommonPasswordRule("Common Password Rule","Error in CommonPasswordRule class");
     static DigitRule digitRule = new DigitRule("Digit Rule","Error in DigitRule class");
     static LengthRule lengthRule = new LengthRule("Length Rule", "Error in LengthRule class");
-
+    static LowercaseRule lowercaseRule = new LowercaseRule("Lower Case Rule","Error in LowercaseRule class");
     public static void main(String args[]) {
 
         System.out.print("Enter a password:");
@@ -22,7 +23,7 @@ class Main{
         boolean upper = pwd.containsUppercase();
         System.out.println("Contains Upper case letter: "+upper);
 
-        boolean lower = pwd.containsLowercase();
+        boolean lower = lowercaseRule.validate(pwd);
         System.out.println("Contains Lower case letter: "+lower);
 
 
