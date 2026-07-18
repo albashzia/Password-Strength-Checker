@@ -14,11 +14,11 @@ public class Password {
         this.value = value;
     }
 
-    String getValue(){
+     public String getValue(){
         return value;
     }
 
-    int getLength(){
+    public int getLength(){
         return value.length();
     }
 
