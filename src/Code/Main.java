@@ -18,14 +18,14 @@ class Main{
 
         Password pwd = new Password(value);
 
-        boolean upper = pwd.containsUppercase();
-        System.out.println("Contains Upper case letter: "+upper);
-
         boolean specialChar = pwd.containsSpecialChar();
         System.out.println("Contains Special Character: "+specialChar);
 
         boolean pattern = pwd.containsPattern();
         System.out.println("Contains Pattern: "+pattern);
+
+        boolean upper = uppercaseRule.validate(pwd);
+        System.out.println("Contains Upper case letter: "+upper);
 
         boolean lower = lowercaseRule.validate(pwd);
         System.out.println("Contains Lower case letter: "+lower);
