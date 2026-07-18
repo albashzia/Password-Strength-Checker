@@ -28,7 +28,7 @@ class Main{
         boolean pattern = pwd.containsPattern();
         System.out.println("Contains Pattern: "+pattern);
 
-        boolean commonPassword = commonPasswordRule.containsCommonPassword(value);
+        boolean commonPassword = commonPasswordRule.validate(pwd);
         System.out.println("Contains Common Password: "+commonPassword);
     }
 }
