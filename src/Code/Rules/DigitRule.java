@@ -11,7 +11,7 @@ public class DigitRule extends PasswordRule{
 
 
     @Override
-    boolean validate(Password password) {
+    public boolean validate(Password password) {
         boolean hasDigits = false;
         for (int i = 0; i < password.getValue().length(); i++){
             for(int j = 0; j <=9; j++){
