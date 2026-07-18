@@ -28,16 +28,6 @@ public class Password {
         return false;
     }
 
-    boolean containsLowercase(){
-        for (int index = 0; index < value.length(); index++){
-            if (value.charAt(index)>= 'a' && value.charAt(index)<='z'){
-                return true;
-            }
-        }
-        return false;
-    }
-
-
     boolean containsSpecialChar(){
         for (int index = 0; index < value.length(); index++){
             if (
