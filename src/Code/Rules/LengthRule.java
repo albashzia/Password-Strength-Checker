@@ -6,9 +6,8 @@ public class LengthRule extends PasswordRule{
 
     private int minLength;
 
-    LengthRule(String ruleName, String errorMessage, int minLength){
+    LengthRule(String ruleName, String errorMessage){
         super(ruleName,errorMessage);
-        this.minLength = minLength;
     }
 
     int getMinLength(){
