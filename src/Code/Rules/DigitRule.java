@@ -10,11 +10,13 @@ public class DigitRule extends PasswordRule{
         this.password = password;
     }
 
-    public boolean containsDigit(String password){
+
+    @Override
+    boolean validate(Password password) {
         boolean hasDigits = false;
-        for (int i = 0; i < password.length(); i++){
+        for (int i = 0; i < password.getValue().length(); i++){
             for(int j = 0; j <=9; j++){
-                if (password.contains(Integer.toString(j))){
+                if (password.getValue().contains(Integer.toString(j))){
                     hasDigits = true;
                     return hasDigits;
                 }
@@ -22,10 +24,5 @@ public class DigitRule extends PasswordRule{
             }
         }
         return hasDigits;
-    }
-
-    @Override
-    boolean validate(Password password) {
-        return false;
     }
 }
