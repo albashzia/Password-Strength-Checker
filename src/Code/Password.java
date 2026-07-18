@@ -18,9 +18,6 @@ public class Password {
         return value;
     }
 
-    public int getLength(){
-        return value.length();
-    }
 
     boolean containsUppercase(){
         for (int index = 0; index < value.length(); index++){
