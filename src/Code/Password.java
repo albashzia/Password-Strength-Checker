@@ -38,43 +38,4 @@ public class Password {
         }
         return false;
     }
-
-    boolean containsPattern(){
-        String pattern1 = "0123456789";
-
-        for (int i = 0; i < pattern1.length(); i++){
-            for (int j = 1+1; j <= pattern1.length(); j++){
-                String sub = pattern1.substring(i,j);
-                if (value.contains(sub)){
-                    return true;
-                }
-            }
-        }
-
-        String pattern2 = "abcdefghijklmnopqrstuvwxyz";
-
-        for (int i = 0; i < pattern2.length(); i++){
-            for (int j = 1+1; j <= pattern2.length(); j++){
-                String sub = pattern2.substring(i,j);
-                if (value.contains(sub)){
-                    return true;
-                }
-            }
-        }
-
-        String pattern3 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-        for (int i = 0; i < pattern3.length(); i++){
-            for (int j = 1+1; j <= pattern3.length(); j++){
-                String sub = pattern3.substring(i,j);
-                if (value.contains(sub)){
-                    return true;
-                }
-            }
-        }
-
-
-        return false;
-    }
-
 }
