@@ -22,7 +22,7 @@ class Main{
         boolean specialChar = pwd.containsSpecialChar();
         System.out.println("Contains Special Character: "+specialChar);
 
-        boolean pattern = pwd.containsPattern();
+        boolean pattern = sequentialPatternRule.validate(pwd);
         System.out.println("Contains Pattern: "+pattern);
 
         boolean upper = uppercaseRule.validate(pwd);
