@@ -4,6 +4,10 @@ import Code.Password;
 
 public class RepeatedCharacterRule extends PasswordRule{
 
+    public RepeatedCharacterRule(){
+
+    }
+
     public RepeatedCharacterRule(String ruleName, String errorMessage){
         super(ruleName,errorMessage);
     }
