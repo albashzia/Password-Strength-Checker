@@ -62,6 +62,10 @@ public class CommonPasswordRule extends PasswordRule{
             "default"
     ));
 
+    public CommonPasswordRule() {
+
+    }
+
     public CommonPasswordRule(String ruleName, String errorMessage){
         super(ruleName,errorMessage);
     }
