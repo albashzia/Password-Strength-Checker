@@ -12,6 +12,7 @@ class Main{
     static LowercaseRule lowercaseRule = new LowercaseRule("Lower Case Rule","Error in LowercaseRule class");
     static UppercaseRule uppercaseRule = new UppercaseRule("Upper Case Rule","Error in UppercaseRule class");
     static SequentialPatternRule sequentialPatternRule = new SequentialPatternRule("Sequential Pattern Rule","Error iN SequentialPatternRule class");
+    static SpecialCharacterRule specialCharacterRule = new SpecialCharacterRule("Special Character Rule","Error in SpecialCharacterRule class");
     public static void main(String args[]) {
 
         System.out.print("Enter a password:");
