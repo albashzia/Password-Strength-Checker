@@ -20,7 +20,7 @@ class Main{
 
         Password pwd = new Password(value);
 
-        boolean specialChar = pwd.containsSpecialChar();
+        boolean specialChar = specialCharacterRule.validate(pwd);
         System.out.println("Contains Special Character: "+specialChar);
 
         boolean pattern = sequentialPatternRule.validate(pwd);
