@@ -16,6 +16,7 @@ public class PasswordChecker {
         boolean[] result = new boolean[8];
 
         result[0] = commonPasswordRule.validate(password);
+        result[1] = digitRule.validate(password);
 
         return result;
     }
