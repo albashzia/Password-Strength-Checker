@@ -6,6 +6,10 @@ public class LengthRule extends PasswordRule{
 
     private final int minLength = 8;
 
+    public LengthRule(){
+
+    }
+
     public LengthRule(String ruleName, String errorMessage){
         super(ruleName,errorMessage);
     }
