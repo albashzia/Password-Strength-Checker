@@ -4,6 +4,10 @@ import Code.Password;
 
 public class LowercaseRule extends PasswordRule{
 
+    public LowercaseRule(){
+
+    }
+
     public LowercaseRule(String ruleName, String errorMessage){
         super(ruleName,errorMessage);
     }
