@@ -1,21 +1,20 @@
 package Code;
 
-import Code.Rules.CommonPasswordRule;
-import Code.Rules.DigitRule;
-import Code.Rules.LengthRule;
-import Code.Rules.LowercaseRule;
+import Code.Rules.*;
 
 public class PasswordChecker {
     CommonPasswordRule commonPasswordRule;
     DigitRule digitRule;
     LengthRule lengthRule;
     LowercaseRule lowercaseRule;
+    SequentialPatternRule sequentialPatternRule;
 
     PasswordChecker(){
         commonPasswordRule = new CommonPasswordRule();
         digitRule = new DigitRule();
         lengthRule = new LengthRule();
         lowercaseRule = new LowercaseRule();
+        sequentialPatternRule = new SequentialPatternRule();
     }
 
     public boolean[] checkPassword(Password password){
