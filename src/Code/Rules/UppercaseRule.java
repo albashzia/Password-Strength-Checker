@@ -4,6 +4,9 @@ import Code.Password;
 
 public class UppercaseRule extends PasswordRule{
 
+    public UppercaseRule(){
+    }
+
     public UppercaseRule(String ruleName, String errorMessage){
         super(ruleName,errorMessage);
     }
