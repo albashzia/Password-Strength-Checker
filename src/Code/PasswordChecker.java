@@ -8,6 +8,7 @@ public class PasswordChecker {
     LengthRule lengthRule;
     LowercaseRule lowercaseRule;
     SequentialPatternRule sequentialPatternRule;
+    UppercaseRule uppercaseRule;
 
     PasswordChecker(){
         commonPasswordRule = new CommonPasswordRule();
@@ -15,6 +16,7 @@ public class PasswordChecker {
         lengthRule = new LengthRule();
         lowercaseRule = new LowercaseRule();
         sequentialPatternRule = new SequentialPatternRule();
+        uppercaseRule = new UppercaseRule();
     }
 
     public boolean[] checkPassword(Password password){
