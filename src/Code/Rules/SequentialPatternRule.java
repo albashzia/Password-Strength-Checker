@@ -4,6 +4,10 @@ import Code.Password;
 
 public class SequentialPatternRule extends PasswordRule{
 
+    public SequentialPatternRule(){
+
+    }
+
     public SequentialPatternRule(String ruleName, String errorMessage){
         super(ruleName,errorMessage);
     }
