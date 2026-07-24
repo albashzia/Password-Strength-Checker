@@ -24,6 +24,8 @@ public class PasswordChecker {
         result[1] = digitRule.validate(password);
         result[2] = lengthRule.validate(password);
         result[3] = lowercaseRule.validate(password);
+        //result[4]
+        result[5] = sequentialPatternRule.validate(password);
 
         return result;
     }
