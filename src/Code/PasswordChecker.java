@@ -28,6 +28,8 @@ public class PasswordChecker {
         result[3] = lowercaseRule.validate(password);
         //result[4]
         result[5] = sequentialPatternRule.validate(password);
+        //result[6]
+        result[7] = uppercaseRule.validate(password);
 
         return result;
     }
