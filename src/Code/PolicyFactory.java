@@ -2,10 +2,7 @@ package Code;
 
 //Creates policies based on user choice
 
-import Code.Rules.DigitRule;
-import Code.Rules.LengthRule;
-import Code.Rules.LowercaseRule;
-import Code.Rules.UppercaseRule;
+import Code.Rules.*;
 
 public class PolicyFactory {
 
@@ -16,7 +13,14 @@ public class PolicyFactory {
         LowercaseRule lowercaseRule = new LowercaseRule();
 
     };
-    void createIntermediatePolicy(){};
+    void createIntermediatePolicy(Password password){
+        DigitRule digitRule = new DigitRule();
+        LengthRule lengthRule = new LengthRule();
+        UppercaseRule uppercaseRule = new UppercaseRule();
+        LowercaseRule lowercaseRule = new LowercaseRule();
+        CommonPasswordRule commonPasswordRule = new CommonPasswordRule();
+        SpecialCharacterRule specialCharacterRule = new SpecialCharacterRule();
+    };
     void createStrongPolicy(){};
     void createAdvancedPolicy(){};
 }
