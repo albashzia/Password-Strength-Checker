@@ -8,6 +8,10 @@ public class SpecialCharacterRule extends PasswordRule{
         super(ruleName,errorMessage);
     }
 
+    public SpecialCharacterRule() {
+
+    }
+
     @Override
     public boolean validate(Password password) {
         String value = password.getValue();
