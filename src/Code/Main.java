@@ -18,6 +18,12 @@ class Main{
         System.out.print("Enter a password:");
         String value = input.next();
 
+        System.out.println("Enter validation level:");
+        System.out.println("1. Basic");
+        System.out.println("2. Intermediate");
+        System.out.println("3. Advanced");
+        int level = input.nextInt();
+
         Password pwd = new Password(value);
 
         boolean specialChar = specialCharacterRule.validate(pwd);
