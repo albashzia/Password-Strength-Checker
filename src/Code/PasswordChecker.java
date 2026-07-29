@@ -8,6 +8,7 @@ public class PasswordChecker {
     LengthRule lengthRule;
     LowercaseRule lowercaseRule;
     SequentialPatternRule sequentialPatternRule;
+    SpecialCharacterRule specialCharacterRule;
     UppercaseRule uppercaseRule;
 
     PasswordChecker(){
@@ -16,6 +17,7 @@ public class PasswordChecker {
         lengthRule = new LengthRule();
         lowercaseRule = new LowercaseRule();
         sequentialPatternRule = new SequentialPatternRule();
+        specialCharacterRule = new SpecialCharacterRule();
         uppercaseRule = new UppercaseRule();
     }
 
