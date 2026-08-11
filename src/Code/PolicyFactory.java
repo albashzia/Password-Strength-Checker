@@ -6,12 +6,11 @@ import Code.Rules.*;
 
 public class PolicyFactory {
 
-    void createBasicPolicy(Password password){
-        DigitRule digitRule = new DigitRule();
-        LengthRule lengthRule = new LengthRule();
-        UppercaseRule uppercaseRule = new UppercaseRule();
-        LowercaseRule lowercaseRule = new LowercaseRule();
-
+    public PasswordPolicy createBasicPolicy(){
+        PasswordPolicy policy = new PasswordPolicy("Basic");
+        policy.addRule(new LengthRule());
+        policy.addRule(new LowercaseRule());
+        return policy;
     };
     void createIntermediatePolicy(Password password){
         DigitRule digitRule = new DigitRule();
