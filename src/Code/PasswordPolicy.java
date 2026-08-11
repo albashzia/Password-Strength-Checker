@@ -8,4 +8,10 @@ public class PasswordPolicy {
     private String policyName;
     private ArrayList<PasswordRule> rules;
 
+
+    public PasswordPolicy(String policyName) {
+        this.policyName = policyName;
+        this.rules = new ArrayList<>();
+    }
+
 }
