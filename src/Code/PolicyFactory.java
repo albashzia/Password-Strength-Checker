@@ -33,6 +33,19 @@ public class PolicyFactory {
         policy.addRule(new RepeatedCharacterRule());
         policy.addRule(new SequentialPatternRule());
         return policy;
-    };
-    void createAdvancedPolicy(){};
+    }
+
+    public PasswordPolicy createAdvancedPolicy() {
+        PasswordPolicy policy = new PasswordPolicy("Advanced");
+        policy.addRule(new LengthRule());
+        policy.addRule(new UppercaseRule());
+        policy.addRule(new LowercaseRule());
+        policy.addRule(new DigitRule());
+        policy.addRule(new SpecialCharacterRule());
+        policy.addRule(new RepeatedCharacterRule());
+        policy.addRule(new SequentialPatternRule());
+        policy.addRule(new CommonPasswordRule());
+
+        return policy;
+    }
 }
