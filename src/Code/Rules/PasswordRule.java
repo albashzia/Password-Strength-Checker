@@ -4,7 +4,7 @@ package Code.Rules;
 
 import Code.Password;
 
-abstract class PasswordRule {
+public abstract class PasswordRule {
     private String ruleName;
     private String errorMessage;
 
