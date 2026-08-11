@@ -14,4 +14,11 @@ public class PasswordPolicy {
         this.rules = new ArrayList<>();
     }
 
+    public void addRule(PasswordRule rule) {
+        rules.add(rule);
+    }
+
+    public ArrayList<PasswordRule> getRules() {
+        return rules;
+    }
 }
