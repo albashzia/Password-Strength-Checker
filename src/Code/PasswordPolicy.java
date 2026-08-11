@@ -18,6 +18,10 @@ public class PasswordPolicy {
         rules.add(rule);
     }
 
+    public String getPolicyName() {
+        return policyName;
+    }
+
     public ArrayList<PasswordRule> getRules() {
         return rules;
     }
