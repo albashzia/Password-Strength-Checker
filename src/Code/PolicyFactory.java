@@ -11,15 +11,18 @@ public class PolicyFactory {
         policy.addRule(new LengthRule());
         policy.addRule(new LowercaseRule());
         return policy;
-    };
-    void createIntermediatePolicy(Password password){
-        DigitRule digitRule = new DigitRule();
-        LengthRule lengthRule = new LengthRule();
-        UppercaseRule uppercaseRule = new UppercaseRule();
-        LowercaseRule lowercaseRule = new LowercaseRule();
-        CommonPasswordRule commonPasswordRule = new CommonPasswordRule();
-        SpecialCharacterRule specialCharacterRule = new SpecialCharacterRule();
-    };
+    }
+
+    public PasswordPolicy createIntermediatePolicy() {
+        PasswordPolicy policy = new PasswordPolicy("Intermediate");
+        policy.addRule(new LengthRule());
+        policy.addRule(new UppercaseRule());
+        policy.addRule(new LowercaseRule());
+        policy.addRule(new DigitRule());
+        policy.addRule(new CommonPasswordRule());
+        return policy;
+    }
+
     void createStrongPolicy(){};
     void createAdvancedPolicy(){};
 }
