@@ -14,6 +14,7 @@ public class CommonPasswordRule extends PasswordRule{
 
 
     public CommonPasswordRule() {
+        loadCommonPasswords();
 
     }
 
@@ -32,6 +33,7 @@ public class CommonPasswordRule extends PasswordRule{
 
     public CommonPasswordRule(String ruleName, String errorMessage){
         super(ruleName,errorMessage);
+        loadCommonPasswords();
     }
 
 
