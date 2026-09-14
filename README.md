@@ -1,4 +1,4 @@
-<h1 align="center">Password Strength Checker</h1>
+⁷<h1 align="center">Password Strength Checker</h1>
 
 <h2 align="center">Overview</h2>
 <h2 align="center">Project Structure</h2>
@@ -42,7 +42,7 @@
 </ul>
 <h2 align="center">Working</h2>
 <p>
-
+ This is a console based application so it only requires Java installation on the system. 
 </p>
 <h2 align="center">Purpose</h2>
 <h2 align="center">License</h2>
